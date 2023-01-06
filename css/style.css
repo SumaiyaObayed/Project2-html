@@ -1,0 +1,371 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.sec1{
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(../images/manhattan.jpg);
+    height: 500px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: center;  
+}
+
+body{
+    background-color: lightgrey;
+}
+.menubar{
+    padding: 10px 45px 50px 45px ;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.menubar img{
+    width: 150px;
+}
+.navRight ul{
+    list-style: none;
+}
+
+.navRight ul li{
+    display: inline-block;
+    padding: 0px 20px;
+    position: relative;
+}
+
+ .navRight ul li a{
+    text-decoration: none;
+    color: dodgerblue;
+    font-size: large;
+    
+}
+
+/* .navRight ul li::after{
+    content: "";
+    width: 0;
+    height: 2px;
+    background: blue;
+    position: absolute;
+    bottom: -15px;
+    left: 0;
+    transition: width 0.3s;
+} */
+/* .navRight ul li:hover::after{
+    width: 100%;
+} */
+
+.navRight ul li ul{
+    position: absolute;
+    top: 175%;
+    list-style: none;
+    background: #e2e2e2;
+    width: 160px;
+    opacity: 0;
+    visibility: hidden;
+    transform: scaleY(0);
+    transition: 0.3s;
+    transform-origin: top;
+}
+
+.navRight ul li ul li{
+    display: block;
+    padding: 20px;  
+}
+
+.navRight ul li ul li a{
+    color:black
+}
+
+.navRight ul li:hover ul{
+    opacity: 1;
+    visibility: visible;
+    transform: scaleY(1);
+}
+.sec1Container h1{
+    font-size: 50px;
+    color: White;
+    margin-bottom: 10px;
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+}
+.sec1Container p{
+    font-size: 25px;
+    color: white;
+    padding-bottom: 30px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+.sec1Container a{
+    font-size: 23px;
+    color: White;
+    text-decoration: none;
+    border: 3px solid blue;
+    padding: 5px 25px 5px 25px;
+    border-radius: 50px ;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+/* sec1 ENDS */
+
+.sec2{
+    background: White;
+    padding: 50px 60px 50px 60px;
+}
+.s2RowTop, .s2RowBottom{
+    overflow: hidden;
+}
+
+.s2box{
+    width: 33.3%;
+    float: left;
+    overflow: hidden;  
+}
+.s2icon{
+    width: 10%;
+    float: left;
+}
+
+.s2content{
+    width: 90%;
+    float: left;
+}
+
+
+.s2icon i{
+    color: chocolate;
+    font-size: 35px;
+}
+.s2content h3{
+    font-size: 25px;
+    color: black;
+}
+.s2content p{
+    color: gray;
+    font-size: 18px;
+    padding-top: 10px;
+    line-height: 28px;
+}
+/* sec2 ENDS */
+
+.sec3{
+    background: White;
+    padding: 100px 100px 30px 100px;
+    overflow: hidden;
+}
+
+.s3Left{
+    width: 50%;
+    float: left;
+    margin-right: 20; 
+    padding-top: 28;
+}
+.s3Right{
+    width: 48%;
+    float: left;
+}
+.s3Right img{
+    width: 600px;
+}
+
+
+.s3Left h1{
+    font-size: 45px;
+    color: black;
+    font-weight: 600px;
+}
+.s3Left p{
+    color: gray;
+    font-weight: 600px;
+    font-size: 20px;
+    padding: 15px 20px 15px 0px;
+    line-height: 25px;
+}
+ .sec3 ul li{
+    list-style: none;
+    font-size: 20px;
+} 
+.sec3 ul li{
+    margin-bottom: 30px;
+}
+
+
+.sec3 ul li i{
+    color: chocolate;
+    /* font-size: 35px; */
+    margin-right: 10px;
+    padding-bottom: 15px;
+    
+}
+     
+.s3Left a{
+    font-size: 23px;
+    color: White;
+    background-color: coral;
+    text-decoration: none;
+    border: 1px solid blue;
+    padding: 10px 50px 10px 50px;
+    border-radius: 50px ;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+/* sec3 ENDS */
+
+
+
+.sec4{
+    margin-top: 100px;
+    background-image: linear-gradient( to right, 
+    #713F2B 30%, #EC9C6F);
+    padding: 20px 100px 40px 100px;
+    height: 200px;
+    overflow: hidden;
+}
+.sec4 img{
+    width: 30px;
+    padding-bottom: 10px;
+}
+.s4Column{
+    width: 33.3%;
+    float: left;
+    text-align: center; 
+}
+.s4Column h2{
+    padding-bottom: 20px;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+.s4Column p{
+    color: white;
+    font-size: 18px;
+    padding-top: 0px 10px;
+    line-height: 25px; 
+    margin-right: 30px; 
+}
+/* sec4 ENDS */
+.sec5{
+    height: 500px;
+    text-align: center;
+    background-color: White;
+    padding: 100px 100px 50px 100px;
+    overflow: hidden;
+    border-bottom: solid #733724 10px;
+}
+.sec5 p{
+    font-size: 18px;
+    line-height: 25px;
+    padding: 0px 20px;
+    margin-bottom: 40px;
+    color: black;
+}
+.sec5 h1{
+    font-size: 36px;
+    color: black;
+}
+
+.s5Column{
+    background-color: #F5F6F8;
+    width: 29.1%;
+    float: left;
+    overflow: hidden; 
+    border-bottom: 3px solid coral;
+    border-right: 3px solid coral;
+    margin-right: 35px;
+    
+} 
+.sec5 img{
+    width: 75px;
+    padding-bottom: 70px;
+    padding-top: 20px;
+}
+.s5Column h4{
+    color: coral;
+    padding-top: 10px;
+    font-size: 15px;
+
+}
+/* sec5 ENDS */
+.sec6{
+   height: 200px;
+   text-align: center;
+   padding: 100px 0px 100px 0px;
+   background-color: white;  
+}
+.sec6 img{
+    width: 70px;
+    padding-top: 50px;
+    padding-right: 20px;
+}
+.sec6 h1{
+    font-size: 36px;
+    color: black;
+}
+.sec6 p{
+    color: gray;
+    font-size: 20px;
+    padding-top: 15px;
+    line-height: 28px;
+}
+/* sec6 ENDS */
+.sec7{
+    background-color: peachpuff;
+    border-top: solid coral 10px;
+    padding: 100px 400px 50px 400px;
+    height: 200px;
+    overflow: hidden;
+    text-align: center;
+}
+
+.sec7 h2{
+    text-align: center;
+    color: black;
+    font-size: 45px;
+    font-weight: 600px;
+    padding-bottom: 40px;
+}
+.s7container{
+    overflow: hidden;
+    width: 600px;
+    margin: auto;
+}
+
+.box{
+    width: 33.33%;
+    float: left;
+}
+.sec7 p{
+    font-size: 15px;
+    padding-top: 15px;
+    color: black;
+    font-weight: 600px;
+     
+}
+.sec7 h5{
+    font-size: 20px;
+    padding-top: 15px;
+}
+
+.sec7 i{
+    color: #733724;
+    font-size: 25px;
+    padding-bottom: 20px; 
+}
+/* sec7 ENDS */
+
+.sec8{
+    height: 60px;
+    background-image: linear-gradient( to right, 
+    #713F2B 30%, #EC9C6F);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sec8 p{
+    color: black;
+    font-size: 20px;
+    padding-top: 30px;
+} 
+/* sec8 ENDS */
